@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_main"
+            app:startDestination="@id/cityFragment">
+
+    <fragment android:id="@+id/cityFragment"
+              android:name="com.sree.weatherreport.view.CityFragment"
+              android:label="fragment_city"
+              tools:layout="@layout/fragment_city">
+        <action android:id="@+id/action_cityFragment_to_weatherFragment"
+                app:destination="@id/weatherFragment"
+                app:popUpTo="@id/cityFragment"
+                app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:id="@+id/weatherFragment"
+              android:name="com.sree.weatherreport.view.WeatherFragment"
+              android:label="fragment_weather"
+              tools:layout="@layout/fragment_weather">
+        <action android:id="@+id/action_weatherFragment_to_cityFragment32"
+                app:destination="@id/cityFragment3"
+                app:popUpTo="@id/weatherFragment"
+                app:popUpToInclusive="false"
+        />
+    </fragment>
+    <fragment android:id="@+id/cityFragment3"
+              android:name="com.sree.weatherreport.view.CityFragment"
+              android:label="fragment_city"
+              tools:layout="@layout/fragment_city"/>
+</navigation>

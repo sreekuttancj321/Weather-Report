@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather Report</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_city_name_hint">Enter City Name</string>
+
+    <string name="sample_text_avg">16 &#176;</string>
+    <string name="sample_text_min">6 &#176;</string>
+    <string name="sample_text_max">22 &#176;</string>
+    <string name="no_network">Network Not Available</string>
+    <string name="network_message">Try again or come back later</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="city_not_found">City not found</string>
+    <string name="warning">Something went wrong</string>
+
+</resources>
